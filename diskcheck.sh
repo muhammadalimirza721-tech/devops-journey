@@ -5,4 +5,7 @@ if [ "$USAGE" -gt 80 ]; then
 else
   echo "Disk usage OK: $USAGE%"
 fi
+echo "---"
+echo "Memory Usage"
+free -h | grep Mem
 
